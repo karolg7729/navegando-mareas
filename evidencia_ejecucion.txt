@@ -1,0 +1,56 @@
+=== DEMO: catálogo de 4 categorías, 16 subcategorías, 240 productos ===
+
+>> Navegación única (sin estrategias) hasta 'Gimnasio':
+  Nodos visitados: 17
+
+>> Estrategia 1: Por categoría -> Deportes/Gimnasio
+   - [Producto] Gimnasio modelo 1 (popularidad 20)
+   - [Producto] Gimnasio modelo 2 (popularidad 11)
+   - [Producto] Gimnasio modelo 3 (popularidad 23)
+   - [Producto] Gimnasio modelo 4 (popularidad 20)
+   - [Producto] Gimnasio modelo 5 (popularidad 30)
+   - [Producto] Gimnasio modelo 6 (popularidad 85)
+   - [Producto] Gimnasio modelo 7 (popularidad 30)
+   - [Producto] Gimnasio modelo 8 (popularidad 2)
+   - [Producto] Gimnasio modelo 9 (popularidad 63)
+   - [Producto] Gimnasio modelo 10 (popularidad 76)
+  [Métrica] Por categoría: 2 pasos, 8 nodos visitados, 0.021 ms
+
+>> Estrategia 2: Por búsqueda -> 'ciclismo modelo 1'
+   - [Producto] Ciclismo modelo 1 (popularidad 94)
+   - [Producto] Ciclismo modelo 10 (popularidad 50)
+   - [Producto] Ciclismo modelo 11 (popularidad 86)
+   - [Producto] Ciclismo modelo 12 (popularidad 45)
+   - [Producto] Ciclismo modelo 13 (popularidad 3)
+   - [Producto] Ciclismo modelo 14 (popularidad 60)
+   - [Producto] Ciclismo modelo 15 (popularidad 46)
+  [Métrica] Por búsqueda: 1 pasos, 261 nodos visitados, 0.148 ms
+
+>> Estrategia 3: Por popularidad
+   - [Producto] Cocina modelo 7 (popularidad 100)
+   - [Producto] Muebles modelo 2 (popularidad 100)
+   - [Producto] Tecnología modelo 1 (popularidad 100)
+   - [Producto] Fútbol modelo 7 (popularidad 99)
+   - [Producto] Decoración modelo 12 (popularidad 98)
+  [Métrica] Por popularidad: 1 pasos, 261 nodos visitados, 0.091 ms
+
+>> DESHACER (Command/HistoryManager)
+  << Se deshizo la navegación. Vista anterior restaurada.
+   - [Producto] Ciclismo modelo 1 (popularidad 94)
+   - [Producto] Ciclismo modelo 10 (popularidad 50)
+   - [Producto] Ciclismo modelo 11 (popularidad 86)
+   - [Producto] Ciclismo modelo 12 (popularidad 45)
+   - [Producto] Ciclismo modelo 13 (popularidad 3)
+   - [Producto] Ciclismo modelo 14 (popularidad 60)
+   - [Producto] Ciclismo modelo 15 (popularidad 46)
+
+>> REHACER
+   - [Producto] Cocina modelo 7 (popularidad 100)
+   - [Producto] Muebles modelo 2 (popularidad 100)
+   - [Producto] Tecnología modelo 1 (popularidad 100)
+   - [Producto] Fútbol modelo 7 (popularidad 99)
+   - [Producto] Decoración modelo 12 (popularidad 98)
+  [Métrica] Por popularidad: 1 pasos, 261 nodos visitados, 0.072 ms
+
+=== RESUMEN DE MÉTRICAS (Observer) ===
+Navegaciones: 4 | Pasos totales: 5 | Nodos visitados: 791 | Tiempo total: 0.333 ms
